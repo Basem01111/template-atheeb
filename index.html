@@ -24,393 +24,353 @@
     <body>
     <!-- Start Top Nav Bar -->
     <nav class="top-nav not-print">
-      <div class="container">
-          <a href="#" class="tog-show" data-show=".top-nav .list-item"><i class="fa-solid fa-bars"></i></a>
-          <ul class="list-item">
-                  <li>
-                      <a href="{{ route('front.departments.index') }}" class="d-flex">الاقسام
-                      </a>
-                  </li>
-                  <li>
-                      <a href="{{ route('front.offers.index') }}" class="d-flex">
-                        العروض
-                      </a>
-                  </li>
-                  <li>
-                      <a href="{{ route('front.forms.index') }}" class="d-flex">
-                        النماذج الطبية
-                      </a>
-                  </li>
-                  <li>
-                      <a href="{{ route('front.products.index') }}" class="d-flex">
-                        الخدمات
-                      </a>
-                  </li>
-                  <li>
-                      <div class="dropdown-hover item">
-                          <a class="d-flex">{{ __('admin.Expenses') }}
-                              <div class="arrow-icon me-1">
-                                  <i class="fa-solid fa-angle-down"></i>
-                              </div>
-                          </a>
-                          <ul class="listis-item " id="dropdown-lang">
-                              <li class="item-drop">
-                                  <a href="{{ route('front.categories.index') }}">
-                                      <p class="text">{{ __('admin.categories') }}</p>
-                                  </a>
-                              </li>
-                              <li class="item-drop">
-                                  <a href="{{ route('front.expenses.index') }}">
-                                      <p class="text">{{ __('admin.Expenses') }}</p>
-                                  </a>
-                              </li>
-                          </ul>
-                      </div>
-                  </li>
-                  <li>
-                      <a href="{{ route('front.purchases.index') }}" class="d-flex">{{ __('admin.Purchases') }}
-                      </a>
-                  </li>
-                  <li>
-                      <a href="{{ route('front.invoices.create') }}" class="d-flex">{{ __('admin.Add invoice') }}
-                      </a>
-                  </li>
-                      <a href="{{ route('front.appointment.transferred') }}" class="d-flex">
-                          {{ __('Transferred patients') }}
-                          <div class="badge-count me-1 mb-1">
-                              {{ App\Models\Appointment::where('appointment_status', 'transferred')->count() }}</div>
-                      </a>
-                  </li>
-                      <div class="dropdown-hover item">
-                          <a class="d-flex">
-                              {{ __('accounting') }}
-                              <div class="arrow-icon me-1">
-                                  <i class="fa-solid fa-angle-down"></i>
-                              </div>
-                          </a>
-                          <ul class="listis-item " id="dropdown-lang">
-                              <li class="item-drop">
-                                  <a href="{{ route('front.Financial_report') }}">
-                                      <p class="text">{{ __('Public Statement of Account') }}</p>
-                                  </a>
-                              </li>
-                              <li class="item-drop">
-                                  <a href="{{ url('/treasury') }}">
-                                      <p class="text">{{ __('Treasury Report') }}</p>
-                                  </a>
-                              </li>
-                              <li class="item-drop">
-                                  <a href="{{ route('front.Clidoc_report') }}">
-                                      <p class="text">{{ __('Clinic Report and Doctor') }}</p>
-                                  </a>
-                              </li>
-                              <li class="item-drop">
-                                  <a href="{{ route('front.patient_report') }}">
-                                      <p class="text">{{ __('Patient Report') }}</p>
-                                  </a>
-                              </li>
-                              <li class="item-drop">
-                                  <a href="{{ route('front.reception_staff_report') }}">
-                                      <p class="text">{{ __('admin.Reception staff report') }}</p>
-                                  </a>
-                              </li>
-                              <li class="item-drop">
-                                  <a href="{{ route('front.insurances_report') }}">
-                                      <p class="text">{{ __('admin.Insurance companies report') }}</p>
-                                  </a>
-                              </li>
-                              <li class="item-drop">
-                                  <a href="{{ route('front.purchases_report') }}">
-                                      <p class="text">{{ __('admin.Purchases report') }}</p>
-                                  </a>
-                              </li>
-                              <li class="item-drop">
-                                  <a href="{{ route('front.expenses_report') }}">
-                                      <p class="text">{{ __('admin.Expense report') }}</p>
-                                  </a>
-                              </li>
-                              <li class="item-drop">
-                                  <a href="{{ route('front.salaries.index') }}">
-                                      <p class="text"> {{ __('admin.Salaries') }}</p>
-                                  </a>
-                              </li>
-                          </ul>
-                      </div>
-                  </li>
-          </ul>
-          <div class="dropdown-hover" data-show="dropdown-lang">
-              <div class="icon-drop">
-                  <i class="fa-solid fa-user icon"></i>
-              </div>
-              <p class="text">admin}</p>
-              <div class="arrow-icon">
-                  <i class="fa-solid fa-angle-down"></i>
-              </div>
-              <ul class="listis-item" id="dropdown-lang">
-                  <li class="item-drop">
-                      <a href="#">
-                          <p class="text">
-                              <form class="w-100" action="{{ route('logout') }}" method="POST" id="logout-form">
-                                  <button class="border-0 bg-transparent p-0">
-                                      <p class="text">تسجيل الخروج</p>
-                                  </button>
-                              </form>
-                          </p>
-                      </a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-  
-  <!-- End Top Nav Bar -->
-  <!-- Start Bottom Nav Bar -->
-  <nav class="bottom-nav not-print">
-    <div class="container">
-        <a href="#" class="tog-show" data-show=".bottom-nav .list-item"><i class="fa-solid fa-bars"></i></a>
-        <div class="nav-holder d-flex align-items-center justify-content-between">
+        <div class="container">
+            <a href="#" class="tog-show" data-show=".top-nav .list-item"><i class="fa-solid fa-bars"></i></a>
             <ul class="list-item">
                 <li>
-                    <a class="item" href="{{ route('front.home') }}">
-                        {{ __('admin.home') }}
-                        <i class="i-item fa-solid fa-house"></i>
+                    <a href="" class="d-flex">
+                    الاقسام
                     </a>
                 </li>
-                @can('اضافة مريض')
+                <li>
+                    <a href="" class="d-flex">
+                    العروض
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                    النماذج الطبية
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                    الخدمات
+                    </a>
+                </li>
+                <li>
+                    <div class="dropdown-hover item">
+                        <a class="d-flex">
+                            المصاريف
+                            <div class="arrow-icon me-1">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </a>
+                        <ul class="listis-item " id="dropdown-lang">
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">المصاريف</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">أقسام المصاريف</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                        المشتريات
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                        أضافة فاتورة
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                        المرضى المحولين
+                        <div class="badge-count me-1 mb-1">0</div>
+                    </a>
+                </li>
+                <li>
+                    <div class="dropdown-hover item">
+                        <a class="d-flex">
+                            المحاسبة
+                            <div class="arrow-icon me-1">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </a>
+                        <ul class="listis-item " id="dropdown-lang">
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">كشف حساب عام</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير الخزينة</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير العيادة و الدكتور</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير المريض</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير موظفي الاستقبال</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير شركات التأمين</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير المشتريات</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير المصروفات</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text"> الرواتب</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="dropdown-hover" data-show="dropdown-lang">
+                <div class="icon-drop">
+                    <i class="fa-solid fa-user icon"></i>
+                </div>
+                <p class="text">الاستقبال</p>
+                <div class="arrow-icon">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <ul class="listis-item" id="dropdown-lang">
+                    <li class="item-drop">
+                        <a href="#">
+                            <p class="text">
+                                <form class="w-100" action="" method="" id="logout-form">
+                                    <button class="border-0 bg-transparent p-0">
+                                        <p class="text">تسجيل الخروج</p>
+                                    </button>
+                                </form>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Top Nav Bar -->
+    <!-- Start Bottom Nav Bar -->
+    <nav class="bottom-nav not-print">
+        <div class="container">
+            <a href="#" class="tog-show" data-show=".bottom-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+            <div class="nav-holder d-flex align-items-center justify-content-between">
+                <ul class="list-item">
                     <li>
-                        <a class="item" href="{{ route('front.patients.create') }}">
-                            {{ __('admin.Add patient') }}
+                        <a class="item" href="index.html">
+                            الرئيسية
+                            <i class="i-item fa-solid fa-house"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            اضافة مريض
                             <i class="i-item fa-solid fa-syringe"></i>
                         </a>
                     </li>
-                @endcan
-                @can('المرضى')
                     <li>
-                        <a class="item" href="{{ route('front.patients.index') }}">
-                            {{ __('admin.patients') }}
+                        <a class="item" href="">
+                            المرضى
                             <i class="i-item fa-solid fa-users"></i>
                         </a>
                     </li>
-                @endcan
-                @can('المواعيد')
                     <li>
-                        <a class="item" href="{{ route('front.appointments.index') }}">
-                            {{ __('admin.Appointments') }}
+                        <a class="item" href="">
+                            المواعيد
                             <i class="i-item fa-solid fa-calendar-days"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="item" href="{{ route('front.appointments_info') }}">
-                            {{ __('Appointments Data')}}
+                        <a class="item" href="">
+                            بيانات المواعيد
                             <i class="i-item fa-solid fa-calendar-days"></i>
                         </a>
                     </li>
-                @endcan
-                @can('الفواتير')
                     <li>
-                        <a class="item" href="{{ route('front.invoices.index') }}">
-                            {{ __('admin.invoices') }}
+                        <a class="item" href="">
+                            الفواتير
                             <i class="i-item fa-solid fa-file-invoice"></i>
                         </a>
                     </li>
-                @endcan
-                @can('التشخيصات')
                     <li>
-                        <a class="item" href="{{ route('front.diagnoses.index') }}">
-                            {{ __('admin.Diagnoses') }}
+                        <a class="item" href="">
+                            التشخيصات
                             <i class="i-item fa-solid fa-money-check-dollar"></i>
                         </a>
                     </li>
-                @endcan
-                <li>
-                    <a class="item" href="{{ route('front.scan_requests') }}">
-                        {{ __('Rays') }}
-                        <i class="i-item fa-solid fa-money-check-dollar"></i>
-                        <div class="badge-count">{{ App\Models\ScanRequest::where('status', 'pending')->count() }}
-                            </div>
-                        </a>
-                    </li>
                     <li>
-                        <a class="item" href="{{ route('front.lab_requests') }}">
-                        {{ __('Lab') }}
-                        <i class="i-item fa-solid fa-money-check-dollar"></i>
-                        <div class="badge-count">{{ App\Models\LabRequest::where('status', 'pending')->count() }}</div>
-                    </a>
-                </li>
-                @can('تسديد الزيارات')
-                    <li>
-                        <a class="item" href="{{ route('front.pay_visit') }}">
-                            {{ __('admin.Pay a visit') }}
+                        <a class="item" href="">
+                            الأشعة
                             <i class="i-item fa-solid fa-money-check-dollar"></i>
-                            <div class="badge-count">
-                                {{ App\Models\Invoice::whereRelation('employee', 'type', 'dr')->where('status', 'Unpaid')->count() }}
-                            </div>
+                            <div class="badge-count">0</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="">
+                            المختبر
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                            <div class="badge-count">0</div>
                         </a>
                     </li>
-                @endcan
-
-            </ul>
-            @can('الاشعارات')
+                    <li>
+                        <a class="item" href="">
+                            تسديد الزيارات
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                            <div class="badge-count">0</div>
+                        </a>
+                    </li>
+                </ul>
                 <div class="notification d-flex">
                     <ul class="list-item">
                         <li>
-                            <a class="item" href="{{ route('front.notifications') }}">
-                                {{ __('admin.Notifications') }}
+                            <a class="item" href="">
+                                الاشعارات
                                 <i class="i-item fa-solid fa-bell"></i>
-                                <div class="badge-count">{{ App\Models\Notification::where('seen', false)->count() }}</div>
+                                <div class="badge-count">0</div>
                             </a>
                         </li>
-
-                        @if (app()->getLocale() == 'ar')
-                            <li>
-                                <a class="lang me-2" href="{{ LaravelLocalization::getLocalizedURL('en') }}"> <i
-                                        class="fa-solid fa-language"></i></a>
-                            </li>
-                        @else
-                            <li>
-                                <a class="lang me-2" href="{{ LaravelLocalization::getLocalizedURL('ar') }}"> <i
-                                        class="fa-solid fa-language"></i></a>
-                            </li>
-                        @endif
-
-
+                        <li>
+                            <a class="lang me-2" href=""> <i class="fa-solid fa-language"></i></a>
+                        </li>
                     </ul>
                 </div>
-            @endcan
+            </div>
         </div>
-    </div>
-</nav>
-
-  <!-- End Bottom Nav Bar -->
-        <!-- Start Section -->
-        <section class="main-section home ">
-            <div class="container">
-                <h4 class="main-heading">الرئيسية</h4>
-                <div class="row row-gap-24 mb-4 boxes-info">
-                    <div class=" col-sm-6 col-lg-3">
-                        <div class="box-info blue">
-                            <i class="fas fa-coins bg-icon"></i>
-                            <div class="num">851.00
-                            </div>
-                            <div class="text">الرصيد الاجمالي</div>
+    </nav>
+    <!-- End Bottom Nav Bar -->
+    <!-- Start Section -->
+    <section class="main-section home ">
+        <div class="container">
+            <h4 class="main-heading">الرئيسية</h4>
+            <div class="row row-gap-24 mb-4 boxes-info">
+                <div class=" col-sm-6 col-lg-3">
+                    <div class="box-info blue">
+                        <i class="fas fa-coins bg-icon"></i>
+                        <div class="num">851.00
                         </div>
+                        <div class="text">الرصيد الاجمالي</div>
                     </div>
-                    <div class=" col-sm-6 col-lg-3">
-                        <div class="box-info green">
-                            <i class="fas fa-money-check-alt bg-icon"></i>
-                            <div class="num">
-                                0.00
-                            </div>
-                            <div class="text">رصيد المستثمرين
-                            </div>
+                </div>
+                <div class=" col-sm-6 col-lg-3">
+                    <div class="box-info green">
+                        <i class="fas fa-money-check-alt bg-icon"></i>
+                        <div class="num">
+                            0.00
                         </div>
-                    </div>
-                    <div class=" col-sm-6 col-lg-3">
-                        <div class="box-info pur">
-                            <i class="fas fa-file-contract bg-icon"></i>
-                            <div class="num">851.00
-                            </div>
-                            <div class="text">كل العقود</div>
-                        </div>
-                    </div>
-                    <div class=" col-sm-6 col-lg-3">
-                        <div class="box-info red">
-                            <i class="fas fa-globe-americas bg-icon"></i>
-                            <div class="num">0.00</div>
-                            <div class="text">المتاخرات</div>
+                        <div class="text">رصيد المستثمرين
                         </div>
                     </div>
                 </div>
-                <div class="small-heading">الأقساط المتأخرة والمستحقة</div>
-                <div class="table-responsive mb-4">
-                    <table class="table main-table">
-                        <thead>
-                          <tr>
+                <div class=" col-sm-6 col-lg-3">
+                    <div class="box-info pur">
+                        <i class="fas fa-file-contract bg-icon"></i>
+                        <div class="num">851.00
+                        </div>
+                        <div class="text">كل العقود</div>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-lg-3">
+                    <div class="box-info red">
+                        <i class="fas fa-globe-americas bg-icon"></i>
+                        <div class="num">0.00</div>
+                        <div class="text">المتاخرات</div>
+                    </div>
+                </div>
+            </div>
+            <div class="small-heading">الأقساط المتأخرة والمستحقة</div>
+            <div class="table-responsive mb-4">
+                <table class="table main-table">
+                    <thead>
+                        <tr>
                             <th>رقم العقد</th>
                             <th>المستثمر</th>
                             <th>العميل</th>
                             <th>المبلغ</th>
-                            <th>المتبقي من الأقساط	</th>
-                            <th>تاريخ الاستحقاق
-                            </th>
+                            <th>المتبقي من الأقساط</th>
+                            <th>تاريخ الاستحقاق</th>
                         </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>#1</td>
-                                <td>باسم</td>
-                                <td>باسم</td>
-                                <td>50 ريال</td>
-                                <td>25 ريال</td>
-                                <td>2022/2/2</td>
-                            </tr>
-                            <tr>
-                                <td>#1</td>
-                                <td>باسم</td>
-                                <td>باسم</td>
-                                <td>50 ريال</td>
-                                <td>25 ريال</td>
-                                <td>2022/2/2</td>
-                            </tr>
-                            <tr>
-                                <td>#1</td>
-                                <td>باسم</td>
-                                <td>باسم</td>
-                                <td>50 ريال</td>
-                                <td>25 ريال</td>
-                                <td>2022/2/2</td>
-                            </tr>
-                        </tbody>
-                      </table>
-                </div>
-                <div class="small-heading">آخر العقود</div>
-                <div class="table-responsive ">
-                    <table class="table main-table">
-                        <thead>
-                          <tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1</td>
+                            <td>باسم</td>
+                            <td>باسم</td>
+                            <td>50 ريال</td>
+                            <td>25 ريال</td>
+                            <td>2022/2/2</td>
+                        </tr>
+                        <tr>
+                            <td>#1</td>
+                            <td>باسم</td>
+                            <td>باسم</td>
+                            <td>50 ريال</td>
+                            <td>25 ريال</td>
+                            <td>2022/2/2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="small-heading">آخر العقود</div>
+            <div class="table-responsive ">
+                <table class="table main-table">
+                    <thead>
+                        <tr>
                             <th>المستثمر</th>
                             <th>العميل</th>
                             <th>المبلغ</th>
-                            </th>
                         </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>باسم</td>
-                                <td>باسم</td>
-                                <td>50 ريال</td>
-                            </tr>
-                            <tr>
-                                <td>باسم</td>
-                                <td>باسم</td>
-                                <td>50 ريال</td>
-                            </tr>
-                            <tr>
-                                <td>باسم</td>
-                                <td>باسم</td>
-                                <td>50 ريال</td>
-                            </tr>
-                        </tbody>
-                      </table>
-                </div>                
-            </div>
-        </section>
-        <!-- End Section -->
-        <!-- Start Footer -->
-        <div class="footer-bottom py-3 not-print">
-          <div class="container">
-              <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>باسم</td>
+                            <td>باسم</td>
+                            <td>50 ريال</td>
+                        </tr>
+                        <tr>
+                            <td>باسم</td>
+                            <td>باسم</td>
+                            <td>50 ريال</td>
+                        </tr>
+                        
+                    </tbody>
+                    </table>
+            </div>                
+        </div>
+    </section>
+    <!-- End Section -->
+    <!-- Start Footer -->
+    <div class="footer-bottom py-3 not-print">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
                 <p>جميع الحقوق محفوظة © لـ 2022</p>
-                  <div class="about_data d-flex align-items-center justify-content-center">
-                      <p class="ms-2">برنامج سي - إدارة العيادات الطبية 0.0.1</p>
-                      <img class="alt_image" src="./img/footer/doc.png" alt="image">
-                  </div>
-                  <a href="https://www.const-tech.org/">
-                      <img src="./img/footer/copy.png" alt="logo">
-                  </a>
-              </div>
-          </div>
-      </div>
+                <div class="about_data d-flex align-items-center justify-content-center">
+                    <p class="ms-2">برنامج سي - إدارة العيادات الطبية 0.0.1</p>
+                    <img class="alt_image" src="./img/footer/doc.png" alt="image">
+                </div>
+                <a href="https://www.const-tech.org/">
+                    <img src="./img/footer/copy.png" alt="logo">
+                </a>
+            </div>
+        </div>
+    </div>
         <!-- ENd Footer -->
         <!-- Js Files -->
         <script src="js/main.js"></script>
