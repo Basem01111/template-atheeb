@@ -257,163 +257,147 @@
     </nav>
     <!-- End Bottom Nav Bar -->
     <!-- Start Section -->
-    <section class="main-section users">
-      <!--  -->
-          <div class="modal fade" id="add_or_update" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-                  <div class="modal-header">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                      <div class="inp_holder mb-3">
-                          <label for="" class="small-label mb-1">الاسم</label>
-                          <input type="text"  id="" class="w-100 form-control">
-                      </div>
-  
-  <div class="row">
-      <div class="col-12">
-          <div class="alert alert-primary d-flex align-items-center" role="alert">
-          في حال كان القسم خاص بالاشعه او المختبر يمكن التحديد من هنا
-          </div>
-      </div>
-      <div class="col-12">
-                              <div class="cot d-flex gap-2">
-                                  <div class="inp_holder mb-3">
-                                      <input type="checkbox">
-                                      <label for="" class="small-label mb-1">مختبر</label>
-                                      
-                                  </div>
-                                  <div class="inp_holder mb-3">
-                                      <input type="checkbox">
-                                      <label for="" class="small-label mb-1">أشعة</label>
-                                      
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="col-12">
-                          <div class="alert alert-primary d-flex align-items-center" role="alert">
-                              يمكنك تفعيل خدمة التحويل والمواعيد
-                          </div>
-                          </div>
-                          <div class="col-12">
-  
-                              <div class="con d-flex gap-2">
-                                  <div class="inp_holder mb-3">
-                                      <input type="checkbox" >
-                                      <label for="" class="small-label mb-1">قابل لتحويل المرضى</label>
-                                      
-                                  </div>
-                                  <div class="inp_holder mb-3">
-                                      <input type="checkbox" >
-                                      <label for="" class="small-label mb-1">حالة الموعد</label>
-                                      
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">تراجع</button>
-                      <button class="btn btn-sm  btn-success" data-bs-dismiss="modal" >حفظ</button>
-                  </div>
-  
-          </div>
-  
-      </div>
-  </div>
+    <section  class="bills-section main-section pt-4">
       <div class="container">
-          <h4 class="main-heading">الأقسام</h4>
-          <div class="section-content bg-white shadow rounded-3 p-4">
-              <div class="d-flex align-items-center flex-wrap justify-content-end mb-2">
-                  <button class="btn-main-sm" data-bs-toggle="modal" data-bs-target="#add_or_update">
-                      إضافة قسم
-                      <i class="fas fa-plus icon me-1"></i>
-                  </button>
+          <h4 class="main-heading mb-4">الفواتير</h4>
+          <div class="bills-content bg-white p-4 rounded-2 shadow">
+              <div class="bills-option&btn d-flex align-items-center flex-wrap gap-2 justify-content-end mb-1">
+                  <div class="control-option d-flex flex-wrap align-items-center justify-content-center">
+                      <div class="print-btn btn btn-sm btn-warning " id="btn-prt-content">
+                      <i class="fas fa-print"></i>
+                      </div>
+  
+                      <a href="http://127.0.0.1:8000/invoices/create" class="btn-main-sm me-1">
+                          أضافة فاتورة
+                          <i class="fas fa-plus icon me-1"></i>
+                      </a>
+                  </div>
               </div>
+              <div class="top-area mb-3">
+                  <div class="row g-2">
+                      <div class="col-12 col-md-2">
+                          <div class="info-data">
+                              <label for="duration-from" class="billData-name mt-3 mb-2">من</label>
+                              <input type="date" class="form-control" value="2022-07-12" id="duration-from">
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-2">
+                          <div class="info-data">
+                              <label for="duration-to" class="billData-name mt-3 mb-2">الى</label>
+                              <input type="date" class="form-control" value="2024-03-03"  id="duration-to">
+                          </div>
+                      </div>
+  
+                      <div class="col-12 col-md-2">
+                          <div class="info-data">
+                              <label for="doctor-name " class="billData-name mt-3 mb-2">طبيب</label>
+                              <select class="main-select w-100 doctor-name" id="doctor-name" >
+                                  <option value="">كل الاطباء</option>
+                                                                  <option value="3">دكتور 1</option>
+                                                                  <option value="8">ddd</option>
+                                                              </select>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-2">
+                          <div class="info-data">
+                              <label for="doctor-name " class="billData-name mt-3 mb-2">الموظفين</label>
+                              <select class="main-select w-100 doctor-name" id="employee_id">
+                                  <option value="">اختر الموظف</option>
+                                                                  <option value="2">استقبال</option>
+                                                                  <option value="7">sss</option>
+                                                                  <option value="9">asdas</option>
+                                                                  <option value="12">asd</option>
+                                                              </select>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-2">
+                          <div class="info-data">
+                              <label for="bill-state" class="billData-name mt-3 mb-2">الحالة</label>
+                              <select class="main-select w-100 bill-state" id="bill-state">
+                                  <option value="">الكل</option>
+                                  <option value="Paid">مسددة</option>
+                                  <option value="Unpaid">غير مسددة</option>
+                                   <option value="retrieved">مسترجعة</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-2">
+                          <div class="info-data">
+                              <label for="bill-state" class="billData-name mt-3 mb-2">القسم</label>
+                              <select class="main-select w-100 bill-state" id="bill-state" >
+                                  <option value="">الكل</option>
+                                                                  <option value="1">أسنان</option>
+                                                                  <option value="2">مختبر</option>
+                                                                  <option value="3">أشعة</option>
+                                                              </select>
+                          </div>
+                      </div>
+                      <div class="col-12 col-md-2">
+                          <div class="info-data w-100 h-100 d-flex align-items-end justify-content-center">
+                              <button type="submit" class="sec-btn-gre w-100 mt-4 mt-lg-0">
+                                  بحث
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
               <div class="table-responsive">
-                  <div class="modal fade" id="delete_agent1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal fade" id="delete_agent11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
           <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-body">
+                  هل أنت متأكد من عملية الحذف؟
               </div>
   
-  
-                  <div class="modal-body">
-                      هل أنت متأكد من عملية الحذف؟
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">تراجع</button>
-                      <button class="btn btn-sm  btn-success" data-bs-dismiss="modal" >نعم</button>
-                  </div>
-  
-          </div>
-  
-      </div>
-  </div><div class="modal fade" id="delete_agent2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">تراجع</button>
+                  <button class="btn btn-sm  btn-success" data-bs-dismiss="modal" >نعم</button>
               </div>
-  
-  
-                  <div class="modal-body">
-                      هل أنت متأكد من عملية الحذف؟
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">تراجع</button>
-                      <button class="btn btn-sm  btn-success" data-bs-dismiss="modal" >نعم</button>
-                  </div>
-  
           </div>
-  
       </div>
-  </div><div class="modal fade" id="delete_agent3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-  
-  
-                  <div class="modal-body">
-                      هل أنت متأكد من عملية الحذف؟
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">تراجع</button>
-                      <button class="btn btn-sm  btn-success" data-bs-dismiss="modal" >نعم</button>
-                  </div>
-  
-          </div>
-  
-      </div>
-  </div><table class="table main-table">
+  </div><table class="table main-table" id="prt-content">
                       <thead>
                           <tr>
-                              <th>#</th>
-                              <th>الاسم</th>
-                              <th class="text-center">العمليات</th>
+                              <th>رقم الفاتورة</th>
+                              <th>القسم</th>
+                              <th>المريض</th>
+                              <th>طبيب</th>
+                              <th>الموظف</th>
+                              <th>التاريخ</th>
+                              <th>المبلغ</th>
+                              <th>الضريبة</th>
+                              <th>الإجمالي مع الضريبة</th>
+                              <th>الحالة</th>
+                              <th class="not-print">الإجراءات</th>
                           </tr>
                       </thead>
                       <tbody>
-
-                          
                                                   <tr>
-                              <td>3</td>
-                              <td>أشعة</td>
-                              <td>
+                              <td>1</td>
+                              <td>أسنان</td>
+                              <td>شسيشسي   </td>
+                              <td>دكتور 1</td>
+                              <td>استقبال</td>
+                              <td>2022-09-08</td>
+                              <td>100</td>
+                              <td>0</td>
+                              <td>100</td>
+                              <td>مسترجعة</td>
+                              <td class="not-print">
                                   <div class="d-flex align-items-center justify-content-center gap-1">
-                                      <button data-bs-toggle="modal" data-bs-target="#add_or_update" class="btn btn-sm btn-info text-white ms-1" >
-                                        <i class="fas fa-pen-to-square"></i>  
-                                      </button>
-                                      <a class="btn btn-danger btn-sm space-noWrap" href="">
-                                          الفواتير
-                                          <i class="fas fa-file-invoice-dollar"></i>  
+                                      <!--btn  Modal repeat-->
+                                      <a href="http://127.0.0.1:8000/invoices/11" class="btn btn-sm btn-purple">
+                                             <i class="fa fa-eye"></i>
                                       </a>
-                                      <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#delete_agent3">
-                                        <i class="fas fa-trash-can"></i>  
+                                      <a href="http://127.0.0.1:8000/invoices/11/edit" class="btn btn-sm btn-info text-white">
+                                          استرجاع
+                                      </a>
+                                      <a href="http://127.0.0.1:8000/invoices/11/edit" class="btn btn-sm btn-info text-white">
+                                            <i class="fa-solid fa-pen-to-square"></i> 
+                                      </a>
+                                      <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#delete_agent11">
+                                            <i class="fa-solid fa-trash-can"></i> 
                                       </button>
                                   </div>
                               </td>
@@ -422,11 +406,11 @@
                           
                       </tbody>
                   </table>
+                  <div>
+      </div>
+  
               </div>
           </div>
-          <!-- All Modal -->
-          <!-- Modal repeat -->
-  
       </div>
   </section>
     <!-- End Section -->
