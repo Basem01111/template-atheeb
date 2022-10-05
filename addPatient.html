@@ -188,7 +188,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="item" href="">
+                        <a class="item" href="patients.html">
                             المرضى
                             <i class="i-item fa-solid fa-users"></i>
                         </a>
@@ -267,7 +267,6 @@
             <h4 class="section-title p-3 rounded-3 mb-4 text-center">
                 المعلومات الشخصية عن المريض
             </h4>
-            <form class="Patient-form-data">
                 <div class="row mb-4">
                     <div class="col-md-6">
                         <div class="Patient-info right-side">
@@ -341,194 +340,187 @@
                     <button class="more-info border-0 w-100 rounded-3 position-relative text-end">
                         المعلومات الطبية عن المريض
                     </button>
-                    <div class="data-content" wire:ignore.self="">
-                        <div wire:ignore.self="">
-                            <p> هل لديك حساسية للبنسلين أو ادوية أخرى؟ </p>
-                            <div class="radioarea d-flex">
-                                <label class="radio-inline ms-2">
-                                    <input type="radio" id="sensitivity_penicillin1" value="1">
-                                    <span>نعم</span>
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" id="sensitivity_penicillin2" value="0">
-                                    <span>لا</span>
-                                </label>
-                            </div>
+                    <div class="data-content">
+                      <div >
+                        <p> هل لديك حساسية للبنسلين أو ادوية أخرى؟ </p>
+                        <div class="radioarea d-flex">
+                            <label class="radio-inline ms-2">
+                                <input type="radio" id="sensitivity_penicillin1" value="1">
+                                <span>نعم</span>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" id="sensitivity_penicillin2" value="0">
+                                <span>لا</span>
+                            </label>
                         </div>
-                        <div>
-                            <p> هل سبق وأن حدث لديك مشاكل اثناء وبعد عالج الأسنان؟</p>
-                            <div class="radioarea d-flex">
-                                <label class="radio-inline ms-2">
-                                    <input type="radio" id="sensitivity_penicillin1" value="1">
-                                    <span>نعم</span>
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" id="sensitivity_penicillin2" value="0">
-                                    <span>لا</span>
-                                </label>
-                            </div>
+                      </div>
+                      <div>
+                        <p> هل سبق وأن حدث لديك مشاكل اثناء وبعد عالج الأسنان؟</p>
+                        <div class="radioarea d-flex">
+                            <label class="radio-inline ms-2">
+                                <input type="radio" id="sensitivity_penicillin1" value="1">
+                                <span>نعم</span>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" id="sensitivity_penicillin2" value="0">
+                                <span>لا</span>
+                            </label>
                         </div>
-                        <div>
-                            <p> هل تتعاطى ادوية حاليا؟</p>
-                            <div class="radioarea d-flex">
-                                <label class="radio-inline ms-2">
-                                    <input type="radio" id="sensitivity_penicillin1" value="1">
-                                    <span>نعم</span>
-                                </label>
-                                <label class="radio-inline">
-                                    <input type="radio" id="sensitivity_penicillin2" value="0">
-                                    <span>لا</span>
-                                </label>
-                            </div>
+                      </div>
+                      <div>
+                        <p> هل تتعاطى ادوية حاليا؟</p>
+                        <div class="radioarea d-flex">
+                            <label class="radio-inline ms-2">
+                                <input type="radio" id="sensitivity_penicillin1" value="1">
+                                <span>نعم</span>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" id="sensitivity_penicillin2" value="0">
+                                <span>لا</span>
+                            </label>
                         </div>
+                      </div>
                     </div>
-
                     <button class="more-info border-0 w-100 rounded-3 position-relative text-end">
                         ملاحظات علي السجل الصحي
                     </button>
                     <div class="data-content">
-                        <div class="pt-0">
-                            <textarea class="addnote form-control" placeholder="ملاحظات علي السجل الصحي" id="" cols="30" rows="10"></textarea>
-                        </div>
+                      <div class="pt-0">
+                        <textarea class="addnote form-control" placeholder="ملاحظات علي السجل الصحي" id="" cols="30" rows="10"></textarea>
+                      </div>
                     </div>
-
                     <button class="more-info border-0 w-100 rounded-3 position-relative text-end">
-                        الغرض من الزيارة
+                      الغرض من الزيارة
                     </button>
                     <div class="data-content">
-                        <div class="pt-0">
-                            <textarea class="addnote form-control" placeholder="الغرض من الزيارة" id="" cols="30" rows="10"></textarea>
-                        </div>
+                      <div class="pt-0">
+                        <textarea class="addnote form-control" placeholder="الغرض من الزيارة" id="" cols="30" rows="10"></textarea>
+                      </div>
                     </div>
-
                     <button class="more-info border-0 w-100 rounded-3 position-relative text-end">
-                        هل سبق وأن اصبت او ان تعاني حاليا من?
+                      هل سبق وأن اصبت او ان تعاني حاليا من?
                     </button>
                     <div class="data-content">
+                      <div>
                         <div>
-                            <div>
-                                <p>امراض القلب?</p>
-                                <div class="radioarea d-flex">
-                                    <label class="radio-inline ms-2">
-                                        <input type="radio" id="sensitivity_penicillin1" value="1">
-                                        <span>نعم</span>
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" id="sensitivity_penicillin2" value="0">
-                                        <span>لا</span>
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div>
-                                <p>الحمى الروماتيزمية؟</p>
-                                <div class="radioarea d-flex">
-                                    <label class="radio-inline ms-2">
-                                        <input type="radio" id="sensitivity_penicillin1" value="1">
-                                        <span>نعم</span>
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" id="sensitivity_penicillin2" value="0">
-                                        <span>لا</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div>
-                                <p>فقر الدم وأمراض الدم الأخرى؟</p>
-                                <div class="radioarea d-flex">
-                                    <label class="radio-inline ms-2">
-                                        <input type="radio" id="sensitivity_penicillin1" value="1">
-                                        <span>نعم</span>
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" id="sensitivity_penicillin2" value="0">
-                                        <span>لا</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div>
-                                <p>امراض الغدد الدرقية؟</p>
-                                <div class="radioarea d-flex">
-                                    <label class="radio-inline ms-2">
-                                        <input type="radio" id="sensitivity_penicillin1" value="1">
-                                        <span>نعم</span>
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio"  id="sensitivity_penicillin2" value="0">
-                                        <span>لا</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div>
-                                <p>
-                                    الصفراء – التهاب الكبد الوبائي أو أي امراض أخرى في الكبد؟
-                                </p>
-                                <div class="radioarea d-flex">
-                                    <label class="radio-inline ms-2">
-                                        <input type="radio" id="sensitivity_penicillin1" value="1">
-                                        <span>نعم</span>
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" id="sensitivity_penicillin2" value="0">
-                                        <span>لا</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div>
-                              <p>الربو – السل – أو صعوبة في التنفس؟</p>
-                              <div class="radioarea d-flex">
-                                  <label class="radio-inline ms-2">
-                                      <input type="radio" id="sensitivity_penicillin1" value="1">
-                                      <span>نعم</span>
-                                  </label>
-                                  <label class="radio-inline">
-                                      <input type="radio" id="sensitivity_penicillin2" value="0">
-                                      <span>لا</span>
-                                  </label>
-                              </div>
-                            </div>
-                            <div>
-                                <p>امراض الكلى؟</p>
-                                <div class="radioarea d-flex">
-                                    <label class="radio-inline ms-2">
-                                        <input type="radio" id="sensitivity_penicillin1" value="1">
-                                        <span>نعم</span>
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" id="sensitivity_penicillin2" value="0">
-                                        <span>لا</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div>
-                                <p>التشنج أو الصراع أو االغماء؟</p>
-                                <div class="radioarea d-flex">
-                                    <label class="radio-inline ms-2">
-                                        <input type="radio" id="sensitivity_penicillin1" value="1">
-                                        <span>نعم</span>
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" id="sensitivity_penicillin2" value="0">
-                                        <span>لا</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="py-0">
-                                    <label class="mb-2">امراض اخرى</label>
-                                    <textarea class="addnote form-control" placeholder="امراض اخرى" id="" cols="30" rows="10"></textarea>
-                                </div>
+                          <p>امراض القلب?</p>
+                          <div class="radioarea d-flex">
+                              <label class="radio-inline ms-2">
+                                  <input type="radio" id="sensitivity_penicillin1" value="1">
+                                  <span>نعم</span>
+                              </label>
+                              <label class="radio-inline">
+                                  <input type="radio" id="sensitivity_penicillin2" value="0">
+                                  <span>لا</span>
+                              </label>
+                          </div>
+                        </div>
+                        <div>
+                          <p>الحمى الروماتيزمية؟</p>
+                          <div class="radioarea d-flex">
+                              <label class="radio-inline ms-2">
+                                  <input type="radio" id="sensitivity_penicillin1" value="1">
+                                  <span>نعم</span>
+                              </label>
+                              <label class="radio-inline">
+                                  <input type="radio" id="sensitivity_penicillin2" value="0">
+                                  <span>لا</span>
+                              </label>
+                          </div>
+                        </div>
+                        <div>
+                          <p>فقر الدم وأمراض الدم الأخرى؟</p>
+                          <div class="radioarea d-flex">
+                              <label class="radio-inline ms-2">
+                                  <input type="radio" id="sensitivity_penicillin1" value="1">
+                                  <span>نعم</span>
+                              </label>
+                              <label class="radio-inline">
+                                  <input type="radio" id="sensitivity_penicillin2" value="0">
+                                  <span>لا</span>
+                              </label>
+                          </div>
+                        </div>
+                        <div>
+                          <p>امراض الغدد الدرقية؟</p>
+                          <div class="radioarea d-flex">
+                              <label class="radio-inline ms-2">
+                                  <input type="radio" id="sensitivity_penicillin1" value="1">
+                                  <span>نعم</span>
+                              </label>
+                              <label class="radio-inline">
+                                  <input type="radio"  id="sensitivity_penicillin2" value="0">
+                                  <span>لا</span>
+                              </label>
+                          </div>
+                        </div>
+                        <div>
+                          <p>الصفراء – التهاب الكبد الوبائي أو أي امراض أخرى في الكبد؟</p>
+                          <div class="radioarea d-flex">
+                              <label class="radio-inline ms-2">
+                                  <input type="radio" id="sensitivity_penicillin1" value="1">
+                                  <span>نعم</span>
+                              </label>
+                              <label class="radio-inline">
+                                  <input type="radio" id="sensitivity_penicillin2" value="0">
+                                  <span>لا</span>
+                              </label>
+                          </div>
+                        </div>
+                        <div>
+                          <p>الربو – السل – أو صعوبة في التنفس؟</p>
+                          <div class="radioarea d-flex">
+                              <label class="radio-inline ms-2">
+                                  <input type="radio" id="sensitivity_penicillin1" value="1">
+                                  <span>نعم</span>
+                              </label>
+                              <label class="radio-inline">
+                                  <input type="radio" id="sensitivity_penicillin2" value="0">
+                                  <span>لا</span>
+                              </label>
+                          </div>
+                        </div>
+                        <div>
+                            <p>امراض الكلى؟</p>
+                            <div class="radioarea d-flex">
+                                <label class="radio-inline ms-2">
+                                    <input type="radio" id="sensitivity_penicillin1" value="1">
+                                    <span>نعم</span>
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" id="sensitivity_penicillin2" value="0">
+                                    <span>لا</span>
+                                </label>
                             </div>
                         </div>
+                        <div>
+                            <p>التشنج أو الصراع أو االغماء؟</p>
+                            <div class="radioarea d-flex">
+                                <label class="radio-inline ms-2">
+                                    <input type="radio" id="sensitivity_penicillin1" value="1">
+                                    <span>نعم</span>
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" id="sensitivity_penicillin2" value="0">
+                                    <span>لا</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="py-0">
+                                <label class="mb-2">امراض اخرى</label>
+                                <textarea class="addnote form-control" placeholder="امراض اخرى" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="w-100 d-flex align-items-center justify-content-center mt-2">
-                  <button class="send-data btn btn-primary">حفظ البيانات</button>
-                </div>
-            </form>
-        </div>
-      </div>
-    </section>
+                  </div>
+                  <div class="w-100 d-flex align-items-center justify-content-center mt-2">
+                    <button class="send-data btn btn-primary">حفظ البيانات</button>
+                  </div>
+              </div>
+            </div>
+      </section>
     <!-- End Section -->
     <!-- Start Footer -->
     <div class="footer-bottom py-3 not-print">
