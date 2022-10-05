@@ -1,1 +1,556 @@
 `
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- Normalize -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Main Faile Css  -->
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- Font Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+    <!-- Start Top Nav Bar -->
+    <nav class="top-nav not-print">
+        <div class="container">
+            <a href="#" class="tog-show" data-show=".top-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+            <ul class="list-item">
+                <li>
+                    <a href="" class="d-flex">
+                    الاقسام
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                    العروض
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                    النماذج الطبية
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                    الخدمات
+                    </a>
+                </li>
+                <li>
+                    <div class="dropdown-hover item">
+                        <a class="d-flex">
+                            المصاريف
+                            <div class="arrow-icon me-1">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </a>
+                        <ul class="listis-item " id="dropdown-lang">
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">المصاريف</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">أقسام المصاريف</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                        المشتريات
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                        أضافة فاتورة
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                        المرضى المحولين
+                        <div class="badge-count me-1 mb-1">0</div>
+                    </a>
+                </li>
+                <li>
+                    <div class="dropdown-hover item">
+                        <a class="d-flex">
+                            المحاسبة
+                            <div class="arrow-icon me-1">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </a>
+                        <ul class="listis-item " id="dropdown-lang">
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">كشف حساب عام</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير الخزينة</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير العيادة و الدكتور</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير المريض</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير موظفي الاستقبال</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير شركات التأمين</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير المشتريات</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير المصروفات</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text"> الرواتب</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="dropdown-hover" data-show="dropdown-lang">
+                <div class="icon-drop">
+                    <i class="fa-solid fa-user icon"></i>
+                </div>
+                <p class="text">الاستقبال</p>
+                <div class="arrow-icon">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <ul class="listis-item" id="dropdown-lang">
+                    <li class="item-drop">
+                        <a href="#">
+                            <p class="text">
+                                <form class="w-100" action="" method="" id="logout-form">
+                                    <button class="border-0 bg-transparent p-0">
+                                        <p class="text">تسجيل الخروج</p>
+                                    </button>
+                                </form>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Top Nav Bar -->
+    <!-- Start Bottom Nav Bar -->
+    <nav class="bottom-nav not-print">
+        <div class="container">
+            <a href="#" class="tog-show" data-show=".bottom-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+            <div class="nav-holder d-flex align-items-center justify-content-between">
+                <ul class="list-item">
+                    <li>
+                        <a class="item" href="index.html">
+                            الرئيسية
+                            <i class="i-item fa-solid fa-house"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="addPatient.html">
+                            اضافة مريض
+                            <i class="i-item fa-solid fa-syringe"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            المرضى
+                            <i class="i-item fa-solid fa-users"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            المواعيد
+                            <i class="i-item fa-solid fa-calendar-days"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            بيانات المواعيد
+                            <i class="i-item fa-solid fa-calendar-days"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            الفواتير
+                            <i class="i-item fa-solid fa-file-invoice"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            التشخيصات
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            الأشعة
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                            <div class="badge-count">0</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="">
+                            المختبر
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                            <div class="badge-count">0</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            تسديد الزيارات
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                            <div class="badge-count">0</div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="notification d-flex">
+                    <ul class="list-item">
+                        <li>
+                            <a class="item" href="">
+                                الاشعارات
+                                <i class="i-item fa-solid fa-bell"></i>
+                                <div class="badge-count">0</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lang me-2" href=""> <i class="fa-solid fa-language"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Bottom Nav Bar -->
+    <!-- Start Section -->
+    <section class="addPatient-section py-5">
+      <div class="container">
+        <h4 class="main-heading ">إضافة مريض</h4>
+      </div>
+      <div class="container pt-0 p-3 bg-white vh-min-100 rounded-3 shadow">
+        <div class="addPatient-content p-4">
+            <h4 class="section-title p-3 rounded-3 mb-4 text-center">
+                المعلومات الشخصية عن المريض
+            </h4>
+            <form class="Patient-form-data">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="Patient-info right-side">
+                            <div class="fild-control mb-3">
+                                <input type="text" id="Patient-id" class="form-control Patient-id" placeholder="رقم الهوية ( 10 ارقام ) ">
+                            </div>
+                            <div class="fild-control mb-3">
+                                <input type="text" id="Patient-name" class="form-control Patient-name" placeholder="الاسم">
+                            </div>
+                            <div class="fild-control mb-3">
+                                <input type="tel" id="Patient-phone" class="form-control Patient-phone" placeholder="الهاتف">
+                            </div>
+                            <div class="fild-control mb-3">
+                                <select class="gender form-control" id="gender">
+                                    <option value="">الجنس</option>
+                                    <option value="male">ذكر</option>
+                                    <option value="female">انثى</option>
+                                </select>
+                            </div>
+                            <div class="fild-control mb-3">
+                              <select class="form-control">
+                                  <option value=""> اختر المدينة</option>
+                                  <option value="1">الرياض</option>
+                              </select>
+                            </div>
+                            <div class="fild-control mb-3">
+                                <label for="">مرض السكر أو هل يعاني منه أحد افراد العائلة؟</label>
+                                <input type="checkbox" id="patinet-file" class="">
+                            </div>
+                            <div class="fild-control mb-3">
+                                <label for="">ارتفاع أو انخفاض في ضغط الدم؟</label>
+                                <input type="checkbox" id="patinet-file" class="">
+                            </div>
+                            <div class="fild-control mb-3">
+                                <label for="">هل المريض حامل؟</label>
+                                <input type="checkbox" id="patinet-file" class="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="Patient-info left-side">
+                            <div class="fild-control mb-3">
+                                <input type="text" class="birh-date form-control" id="birh-date" placeholder="تاريخ الميلاد هجري" wire:change="calculateAge">
+                            </div>
+                            <div class="fild-control mb-3">
+                                <input type="number" id="age" class="age form-control" placeholder="العمر">
+                            </div>
+                            <div class="fild-control mb-3">
+                              <select class="form-control national" id="national">
+                                <option value="">الجنسية</option>
+                                <option value="1">سعودي</option>
+                              </select>
+                            </div>
+                            <div class="fild-control mb-3">
+                                <input type="file" id="patinet-file" class="form-control">
+                            </div>
+                            <div class="fild-control mt-4">
+                                <label for="">هل المريض لدية تأمين طبي؟</label>
+                                <input type="checkbox" id="patinet-file" class="">
+                            </div>
+
+                            <div class="fild-control mb-3 d-none">
+                              <select class="form-control national" id="national">
+                                <option value="">شركة التأمين</option>
+                              </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="medical-information">
+                    <button class="more-info border-0 w-100 rounded-3 position-relative text-end">
+                        المعلومات الطبية عن المريض
+                    </button>
+                    <div class="data-content" wire:ignore.self="">
+                        <div wire:ignore.self="">
+                            <p> هل لديك حساسية للبنسلين أو ادوية أخرى؟ </p>
+                            <div class="radioarea d-flex">
+                                <label class="radio-inline ms-2">
+                                    <input type="radio" id="sensitivity_penicillin1" value="1">
+                                    <span>نعم</span>
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" id="sensitivity_penicillin2" value="0">
+                                    <span>لا</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <p> هل سبق وأن حدث لديك مشاكل اثناء وبعد عالج الأسنان؟</p>
+                            <div class="radioarea d-flex">
+                                <label class="radio-inline ms-2">
+                                    <input type="radio" id="sensitivity_penicillin1" value="1">
+                                    <span>نعم</span>
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" id="sensitivity_penicillin2" value="0">
+                                    <span>لا</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <p> هل تتعاطى ادوية حاليا؟</p>
+                            <div class="radioarea d-flex">
+                                <label class="radio-inline ms-2">
+                                    <input type="radio" id="sensitivity_penicillin1" value="1">
+                                    <span>نعم</span>
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" id="sensitivity_penicillin2" value="0">
+                                    <span>لا</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="more-info border-0 w-100 rounded-3 position-relative text-end">
+                        ملاحظات علي السجل الصحي
+                    </button>
+                    <div class="data-content">
+                        <div class="pt-0">
+                            <textarea class="addnote form-control" placeholder="ملاحظات علي السجل الصحي" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <button class="more-info border-0 w-100 rounded-3 position-relative text-end">
+                        الغرض من الزيارة
+                    </button>
+                    <div class="data-content">
+                        <div class="pt-0">
+                            <textarea class="addnote form-control" placeholder="الغرض من الزيارة" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <button class="more-info border-0 w-100 rounded-3 position-relative text-end">
+                        هل سبق وأن اصبت او ان تعاني حاليا من?
+                    </button>
+                    <div class="data-content">
+                        <div>
+                            <div>
+                                <p>امراض القلب?</p>
+                                <div class="radioarea d-flex">
+                                    <label class="radio-inline ms-2">
+                                        <input type="radio" id="sensitivity_penicillin1" value="1">
+                                        <span>نعم</span>
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" id="sensitivity_penicillin2" value="0">
+                                        <span>لا</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p>الحمى الروماتيزمية؟</p>
+                                <div class="radioarea d-flex">
+                                    <label class="radio-inline ms-2">
+                                        <input type="radio" id="sensitivity_penicillin1" value="1">
+                                        <span>نعم</span>
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" id="sensitivity_penicillin2" value="0">
+                                        <span>لا</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <p>فقر الدم وأمراض الدم الأخرى؟</p>
+                                <div class="radioarea d-flex">
+                                    <label class="radio-inline ms-2">
+                                        <input type="radio" id="sensitivity_penicillin1" value="1">
+                                        <span>نعم</span>
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" id="sensitivity_penicillin2" value="0">
+                                        <span>لا</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <p>امراض الغدد الدرقية؟</p>
+                                <div class="radioarea d-flex">
+                                    <label class="radio-inline ms-2">
+                                        <input type="radio" id="sensitivity_penicillin1" value="1">
+                                        <span>نعم</span>
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio"  id="sensitivity_penicillin2" value="0">
+                                        <span>لا</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <p>
+                                    الصفراء – التهاب الكبد الوبائي أو أي امراض أخرى في الكبد؟
+                                </p>
+                                <div class="radioarea d-flex">
+                                    <label class="radio-inline ms-2">
+                                        <input type="radio" id="sensitivity_penicillin1" value="1">
+                                        <span>نعم</span>
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" id="sensitivity_penicillin2" value="0">
+                                        <span>لا</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                              <p>الربو – السل – أو صعوبة في التنفس؟</p>
+                              <div class="radioarea d-flex">
+                                  <label class="radio-inline ms-2">
+                                      <input type="radio" id="sensitivity_penicillin1" value="1">
+                                      <span>نعم</span>
+                                  </label>
+                                  <label class="radio-inline">
+                                      <input type="radio" id="sensitivity_penicillin2" value="0">
+                                      <span>لا</span>
+                                  </label>
+                              </div>
+                            </div>
+                            <div>
+                                <p>امراض الكلى؟</p>
+                                <div class="radioarea d-flex">
+                                    <label class="radio-inline ms-2">
+                                        <input type="radio" id="sensitivity_penicillin1" value="1">
+                                        <span>نعم</span>
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" id="sensitivity_penicillin2" value="0">
+                                        <span>لا</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <p>التشنج أو الصراع أو االغماء؟</p>
+                                <div class="radioarea d-flex">
+                                    <label class="radio-inline ms-2">
+                                        <input type="radio" id="sensitivity_penicillin1" value="1">
+                                        <span>نعم</span>
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" id="sensitivity_penicillin2" value="0">
+                                        <span>لا</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="py-0">
+                                    <label class="mb-2">امراض اخرى</label>
+                                    <textarea class="addnote form-control" placeholder="امراض اخرى" id="" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 d-flex align-items-center justify-content-center mt-2">
+                  <button class="send-data btn btn-primary">حفظ البيانات</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Section -->
+    <!-- Start Footer -->
+    <div class="footer-bottom py-3 not-print">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                <p>جميع الحقوق محفوظة © لـ 2022</p>
+                <div class="about_data d-flex align-items-center justify-content-center">
+                    <p class="ms-2">برنامج سي - إدارة العيادات الطبية 0.0.1</p>
+                    <img class="alt_image" src="./img/footer/doc.png" alt="image">
+                </div>
+                <a href="https://www.const-tech.org/">
+                    <img src="./img/footer/copy.png" alt="logo">
+                </a>
+            </div>
+        </div>
+    </div>
+        <!-- ENd Footer -->
+        <!-- Js Files -->
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+    </body>
+</html>
+
+
