@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- Normalize -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Main Faile Css  -->
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- Font Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+    <!-- Start Top Nav Bar -->
+    <nav class="top-nav not-print">
+        <div class="container">
+            <a href="#" class="tog-show" data-show=".top-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+            <ul class="list-item">
+                <li>
+                    <a href="" class="d-flex">
+                    الاقسام
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                    العروض
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                    النماذج الطبية
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                    الخدمات
+                    </a>
+                </li>
+                <li>
+                    <div class="dropdown-hover item">
+                        <a class="d-flex">
+                            المصاريف
+                            <div class="arrow-icon me-1">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </a>
+                        <ul class="listis-item " id="dropdown-lang">
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">المصاريف</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">أقسام المصاريف</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                        المشتريات
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                        أضافة فاتورة
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                        المرضى المحولين
+                        <div class="badge-count me-1 mb-1">0</div>
+                    </a>
+                </li>
+                <li>
+                    <div class="dropdown-hover item">
+                        <a class="d-flex">
+                            المحاسبة
+                            <div class="arrow-icon me-1">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </a>
+                        <ul class="listis-item " id="dropdown-lang">
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">كشف حساب عام</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير الخزينة</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير العيادة و الدكتور</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير المريض</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير موظفي الاستقبال</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير شركات التأمين</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير المشتريات</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير المصروفات</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text"> الرواتب</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="dropdown-hover" data-show="dropdown-lang">
+                <div class="icon-drop">
+                    <i class="fa-solid fa-user icon"></i>
+                </div>
+                <p class="text">الاستقبال</p>
+                <div class="arrow-icon">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <ul class="listis-item" id="dropdown-lang">
+                    <li class="item-drop">
+                        <a href="#">
+                            <p class="text">
+                                <form class="w-100" action="" method="" id="logout-form">
+                                    <button class="border-0 bg-transparent p-0">
+                                        <p class="text">تسجيل الخروج</p>
+                                    </button>
+                                </form>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Top Nav Bar -->
+    <!-- Start Bottom Nav Bar -->
+    <nav class="bottom-nav not-print">
+        <div class="container">
+            <a href="#" class="tog-show" data-show=".bottom-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+            <div class="nav-holder d-flex align-items-center justify-content-between">
+                <ul class="list-item">
+                    <li>
+                        <a class="item" href="index.html">
+                            الرئيسية
+                            <i class="i-item fa-solid fa-house"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="addPatient.html">
+                            اضافة مريض
+                            <i class="i-item fa-solid fa-syringe"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            المرضى
+                            <i class="i-item fa-solid fa-users"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            المواعيد
+                            <i class="i-item fa-solid fa-calendar-days"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            بيانات المواعيد
+                            <i class="i-item fa-solid fa-calendar-days"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            الفواتير
+                            <i class="i-item fa-solid fa-file-invoice"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            التشخيصات
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            الأشعة
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                            <div class="badge-count">0</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="">
+                            المختبر
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                            <div class="badge-count">0</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            تسديد الزيارات
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                            <div class="badge-count">0</div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="notification d-flex">
+                    <ul class="list-item">
+                        <li>
+                            <a class="item" href="">
+                                الاشعارات
+                                <i class="i-item fa-solid fa-bell"></i>
+                                <div class="badge-count">0</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lang me-2" href=""> <i class="fa-solid fa-language"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Bottom Nav Bar -->
+    <!-- Start Section -->
+    <section class="main-section users">
+      <!--  -->
+          <div class="modal fade" id="add_or_update" tabindex="-1" aria-labelledby="exampleModalLabel"  aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="inp_holder mb-3">
+                          <label for="" class="small-label mb-1">الاسم</label>
+                          <input type="text"  id="" class="w-100 form-control">
+                      </div>
+  
+  <div class="row">
+      <div class="col-12">
+          <div class="alert alert-primary d-flex align-items-center" role="alert">
+          في حال كان القسم خاص بالاشعه او المختبر يمكن التحديد من هنا
+          </div>
+      </div>
+      <div class="col-12">
+                              <div class="cot d-flex gap-2">
+                                  <div class="inp_holder mb-3">
+                                      <input type="checkbox">
+                                      <label for="" class="small-label mb-1">مختبر</label>
+                                      
+                                  </div>
+                                  <div class="inp_holder mb-3">
+                                      <input type="checkbox">
+                                      <label for="" class="small-label mb-1">أشعة</label>
+                                      
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12">
+                          <div class="alert alert-primary d-flex align-items-center" role="alert">
+                              يمكنك تفعيل خدمة التحويل والمواعيد
+                          </div>
+                          </div>
+                          <div class="col-12">
+  
+                              <div class="con d-flex gap-2">
+                                  <div class="inp_holder mb-3">
+                                      <input type="checkbox" >
+                                      <label for="" class="small-label mb-1">قابل لتحويل المرضى</label>
+                                      
+                                  </div>
+                                  <div class="inp_holder mb-3">
+                                      <input type="checkbox" >
+                                      <label for="" class="small-label mb-1">حالة الموعد</label>
+                                      
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">تراجع</button>
+                      <button class="btn btn-sm  btn-success" data-bs-dismiss="modal" >حفظ</button>
+                  </div>
+  
+          </div>
+  
+      </div>
+  </div>
+      <div class="container">
+          <h4 class="main-heading">الأقسام</h4>
+          <div class="section-content bg-white shadow rounded-3 p-4">
+              <div class="d-flex align-items-center flex-wrap justify-content-end mb-2">
+                  <button class="btn-main-sm" data-bs-toggle="modal" data-bs-target="#add_or_update">
+                      إضافة قسم
+                      <svg class="svg-inline--fa fa-plus icon me-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"></path></svg><!-- <i class="icon fa-solid fa-plus me-1"></i> Font Awesome fontawesome.com -->
+                  </button>
+              </div>
+              <div class="table-responsive">
+                  <div class="modal fade" id="delete_agent1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+  
+  
+                  <div class="modal-body">
+                      هل أنت متأكد من عملية الحذف؟
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">تراجع</button>
+                      <button class="btn btn-sm  btn-success" data-bs-dismiss="modal" >نعم</button>
+                  </div>
+  
+          </div>
+  
+      </div>
+  </div><div class="modal fade" id="delete_agent2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+  
+  
+                  <div class="modal-body">
+                      هل أنت متأكد من عملية الحذف؟
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">تراجع</button>
+                      <button class="btn btn-sm  btn-success" data-bs-dismiss="modal" >نعم</button>
+                  </div>
+  
+          </div>
+  
+      </div>
+  </div><div class="modal fade" id="delete_agent3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+  
+  
+                  <div class="modal-body">
+                      هل أنت متأكد من عملية الحذف؟
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal">تراجع</button>
+                      <button class="btn btn-sm  btn-success" data-bs-dismiss="modal" >نعم</button>
+                  </div>
+  
+          </div>
+  
+      </div>
+  </div><table class="table main-table">
+                      <thead>
+                          <tr>
+                              <th>#</th>
+                              <th>الاسم</th>
+                              <th class="text-center">العمليات</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                                                  <tr>
+                              <td>1</td>
+                              <td>أسنان</td>
+                              <td>
+                                  <div class="d-flex align-items-center justify-content-center gap-1">
+                                      <button data-bs-toggle="modal" data-bs-target="#add_or_update" class="btn btn-sm btn-info text-white ms-1" 
+                                      >
+                                          <svg class="svg-inline--fa fa-pen-to-square" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen-to-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z"></path></svg><!-- <i class="fa-solid fa-pen-to-square"></i> Font Awesome fontawesome.com -->
+                                      </button>
+                                      <a class="btn btn-danger btn-sm space-noWrap" href="http://127.0.0.1:8000/ar/invoices?department_id=1">
+                                          الفواتير
+                                          <svg class="svg-inline--fa fa-file-invoice-dollar" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-invoice-dollar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M384 128h-128V0L384 128zM256 160H384v304c0 26.51-21.49 48-48 48h-288C21.49 512 0 490.5 0 464v-416C0 21.49 21.49 0 48 0H224l.0039 128C224 145.7 238.3 160 256 160zM64 88C64 92.38 67.63 96 72 96h80C156.4 96 160 92.38 160 88v-16C160 67.63 156.4 64 152 64h-80C67.63 64 64 67.63 64 72V88zM72 160h80C156.4 160 160 156.4 160 152v-16C160 131.6 156.4 128 152 128h-80C67.63 128 64 131.6 64 136v16C64 156.4 67.63 160 72 160zM197.5 316.8L191.1 315.2C168.3 308.2 168.8 304.1 169.6 300.5c1.375-7.812 16.59-9.719 30.27-7.625c5.594 .8438 11.73 2.812 17.59 4.844c10.39 3.594 21.83-1.938 25.45-12.34c3.625-10.44-1.891-21.84-12.33-25.47c-7.219-2.484-13.11-4.078-18.56-5.273V248c0-11.03-8.953-20-20-20s-20 8.969-20 20v5.992C149.6 258.8 133.8 272.8 130.2 293.7c-7.406 42.84 33.19 54.75 50.52 59.84l5.812 1.688c29.28 8.375 28.8 11.19 27.92 16.28c-1.375 7.812-16.59 9.75-30.31 7.625c-6.938-1.031-15.81-4.219-23.66-7.031l-4.469-1.625c-10.41-3.594-21.83 1.812-25.52 12.22c-3.672 10.41 1.781 21.84 12.2 25.53l4.266 1.5c7.758 2.789 16.38 5.59 25.06 7.512V424c0 11.03 8.953 20 20 20s20-8.969 20-20v-6.254c22.36-4.793 38.21-18.53 41.83-39.43C261.3 335 219.8 323.1 197.5 316.8z"></path></svg><!-- <i class="fa fa-file-invoice-dollar"></i> Font Awesome fontawesome.com -->
+                                      </a>
+                                      <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#delete_agent1">
+                                          <svg class="svg-inline--fa fa-trash-can" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="trash-can" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM31.1 128H416V448C416 483.3 387.3 512 352 512H95.1C60.65 512 31.1 483.3 31.1 448V128zM111.1 208V432C111.1 440.8 119.2 448 127.1 448C136.8 448 143.1 440.8 143.1 432V208C143.1 199.2 136.8 192 127.1 192C119.2 192 111.1 199.2 111.1 208zM207.1 208V432C207.1 440.8 215.2 448 223.1 448C232.8 448 240 440.8 240 432V208C240 199.2 232.8 192 223.1 192C215.2 192 207.1 199.2 207.1 208zM304 208V432C304 440.8 311.2 448 320 448C328.8 448 336 440.8 336 432V208C336 199.2 328.8 192 320 192C311.2 192 304 199.2 304 208z"></path></svg><!-- <i class="fa-solid fa-trash-can"></i> Font Awesome fontawesome.com -->
+                                      </button>
+                                  </div>
+                              </td>
+                          </tr>
+                          
+                                                  <tr>
+                              <td>2</td>
+                              <td>مختبر</td>
+                              <td>
+                                  <div class="d-flex align-items-center justify-content-center gap-1">
+                                      <button data-bs-toggle="modal" data-bs-target="#add_or_update" class="btn btn-sm btn-info text-white ms-1" >
+                                          <svg class="svg-inline--fa fa-pen-to-square" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen-to-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z"></path></svg><!-- <i class="fa-solid fa-pen-to-square"></i> Font Awesome fontawesome.com -->
+                                      </button>
+                                      <a class="btn btn-danger btn-sm space-noWrap" href="http://127.0.0.1:8000/ar/invoices?department_id=2">
+                                          الفواتير
+                                          <svg class="svg-inline--fa fa-file-invoice-dollar" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-invoice-dollar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M384 128h-128V0L384 128zM256 160H384v304c0 26.51-21.49 48-48 48h-288C21.49 512 0 490.5 0 464v-416C0 21.49 21.49 0 48 0H224l.0039 128C224 145.7 238.3 160 256 160zM64 88C64 92.38 67.63 96 72 96h80C156.4 96 160 92.38 160 88v-16C160 67.63 156.4 64 152 64h-80C67.63 64 64 67.63 64 72V88zM72 160h80C156.4 160 160 156.4 160 152v-16C160 131.6 156.4 128 152 128h-80C67.63 128 64 131.6 64 136v16C64 156.4 67.63 160 72 160zM197.5 316.8L191.1 315.2C168.3 308.2 168.8 304.1 169.6 300.5c1.375-7.812 16.59-9.719 30.27-7.625c5.594 .8438 11.73 2.812 17.59 4.844c10.39 3.594 21.83-1.938 25.45-12.34c3.625-10.44-1.891-21.84-12.33-25.47c-7.219-2.484-13.11-4.078-18.56-5.273V248c0-11.03-8.953-20-20-20s-20 8.969-20 20v5.992C149.6 258.8 133.8 272.8 130.2 293.7c-7.406 42.84 33.19 54.75 50.52 59.84l5.812 1.688c29.28 8.375 28.8 11.19 27.92 16.28c-1.375 7.812-16.59 9.75-30.31 7.625c-6.938-1.031-15.81-4.219-23.66-7.031l-4.469-1.625c-10.41-3.594-21.83 1.812-25.52 12.22c-3.672 10.41 1.781 21.84 12.2 25.53l4.266 1.5c7.758 2.789 16.38 5.59 25.06 7.512V424c0 11.03 8.953 20 20 20s20-8.969 20-20v-6.254c22.36-4.793 38.21-18.53 41.83-39.43C261.3 335 219.8 323.1 197.5 316.8z"></path></svg><!-- <i class="fa fa-file-invoice-dollar"></i> Font Awesome fontawesome.com -->
+                                      </a>
+                                      <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#delete_agent2">
+                                          <svg class="svg-inline--fa fa-trash-can" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="trash-can" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM31.1 128H416V448C416 483.3 387.3 512 352 512H95.1C60.65 512 31.1 483.3 31.1 448V128zM111.1 208V432C111.1 440.8 119.2 448 127.1 448C136.8 448 143.1 440.8 143.1 432V208C143.1 199.2 136.8 192 127.1 192C119.2 192 111.1 199.2 111.1 208zM207.1 208V432C207.1 440.8 215.2 448 223.1 448C232.8 448 240 440.8 240 432V208C240 199.2 232.8 192 223.1 192C215.2 192 207.1 199.2 207.1 208zM304 208V432C304 440.8 311.2 448 320 448C328.8 448 336 440.8 336 432V208C336 199.2 328.8 192 320 192C311.2 192 304 199.2 304 208z"></path></svg><!-- <i class="fa-solid fa-trash-can"></i> Font Awesome fontawesome.com -->
+                                      </button>
+                                  </div>
+                              </td>
+                          </tr>
+                          
+                                                  <tr>
+                              <td>3</td>
+                              <td>أشعة</td>
+                              <td>
+                                  <div class="d-flex align-items-center justify-content-center gap-1">
+                                      <button data-bs-toggle="modal" data-bs-target="#add_or_update" class="btn btn-sm btn-info text-white ms-1" >
+                                          <svg class="svg-inline--fa fa-pen-to-square" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pen-to-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z"></path></svg><!-- <i class="fa-solid fa-pen-to-square"></i> Font Awesome fontawesome.com -->
+                                      </button>
+                                      <a class="btn btn-danger btn-sm space-noWrap" href="http://127.0.0.1:8000/ar/invoices?department_id=3">
+                                          الفواتير
+                                          <svg class="svg-inline--fa fa-file-invoice-dollar" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-invoice-dollar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M384 128h-128V0L384 128zM256 160H384v304c0 26.51-21.49 48-48 48h-288C21.49 512 0 490.5 0 464v-416C0 21.49 21.49 0 48 0H224l.0039 128C224 145.7 238.3 160 256 160zM64 88C64 92.38 67.63 96 72 96h80C156.4 96 160 92.38 160 88v-16C160 67.63 156.4 64 152 64h-80C67.63 64 64 67.63 64 72V88zM72 160h80C156.4 160 160 156.4 160 152v-16C160 131.6 156.4 128 152 128h-80C67.63 128 64 131.6 64 136v16C64 156.4 67.63 160 72 160zM197.5 316.8L191.1 315.2C168.3 308.2 168.8 304.1 169.6 300.5c1.375-7.812 16.59-9.719 30.27-7.625c5.594 .8438 11.73 2.812 17.59 4.844c10.39 3.594 21.83-1.938 25.45-12.34c3.625-10.44-1.891-21.84-12.33-25.47c-7.219-2.484-13.11-4.078-18.56-5.273V248c0-11.03-8.953-20-20-20s-20 8.969-20 20v5.992C149.6 258.8 133.8 272.8 130.2 293.7c-7.406 42.84 33.19 54.75 50.52 59.84l5.812 1.688c29.28 8.375 28.8 11.19 27.92 16.28c-1.375 7.812-16.59 9.75-30.31 7.625c-6.938-1.031-15.81-4.219-23.66-7.031l-4.469-1.625c-10.41-3.594-21.83 1.812-25.52 12.22c-3.672 10.41 1.781 21.84 12.2 25.53l4.266 1.5c7.758 2.789 16.38 5.59 25.06 7.512V424c0 11.03 8.953 20 20 20s20-8.969 20-20v-6.254c22.36-4.793 38.21-18.53 41.83-39.43C261.3 335 219.8 323.1 197.5 316.8z"></path></svg><!-- <i class="fa fa-file-invoice-dollar"></i> Font Awesome fontawesome.com -->
+                                      </a>
+                                      <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#delete_agent3">
+                                          <svg class="svg-inline--fa fa-trash-can" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="trash-can" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM31.1 128H416V448C416 483.3 387.3 512 352 512H95.1C60.65 512 31.1 483.3 31.1 448V128zM111.1 208V432C111.1 440.8 119.2 448 127.1 448C136.8 448 143.1 440.8 143.1 432V208C143.1 199.2 136.8 192 127.1 192C119.2 192 111.1 199.2 111.1 208zM207.1 208V432C207.1 440.8 215.2 448 223.1 448C232.8 448 240 440.8 240 432V208C240 199.2 232.8 192 223.1 192C215.2 192 207.1 199.2 207.1 208zM304 208V432C304 440.8 311.2 448 320 448C328.8 448 336 440.8 336 432V208C336 199.2 328.8 192 320 192C311.2 192 304 199.2 304 208z"></path></svg><!-- <i class="fa-solid fa-trash-can"></i> Font Awesome fontawesome.com -->
+                                      </button>
+                                  </div>
+                              </td>
+                          </tr>
+                          
+                          
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+          <!-- All Modal -->
+          <!-- Modal repeat -->
+  
+      </div>
+  </section>
+    <!-- End Section -->
+    <!-- Start Footer -->
+    <div class="footer-bottom py-3 not-print">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                <p>جميع الحقوق محفوظة © لـ 2022</p>
+                <div class="about_data d-flex align-items-center justify-content-center">
+                    <p class="ms-2">برنامج سي - إدارة العيادات الطبية 0.0.1</p>
+                    <img class="alt_image" src="./img/footer/doc.png" alt="image">
+                </div>
+                <a href="https://www.const-tech.org/">
+                    <img src="./img/footer/copy.png" alt="logo">
+                </a>
+            </div>
+        </div>
+    </div>
+        <!-- ENd Footer -->
+        <!-- Js Files -->
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+    </body>
+</html>
