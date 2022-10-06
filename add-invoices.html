@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- Normalize -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- Main Faile Css  -->
+        <link rel="stylesheet" href="css/main.css" />
+        <!-- Font Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+    <!-- Start Top Nav Bar -->
+    <nav class="top-nav not-print">
+        <div class="container">
+            <a href="#" class="tog-show" data-show=".top-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+            <ul class="list-item">
+                <li>
+                    <a href="" class="d-flex">
+                    الاقسام
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                    العروض
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                    النماذج الطبية
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                    الخدمات
+                    </a>
+                </li>
+                <li>
+                    <div class="dropdown-hover item">
+                        <a class="d-flex">
+                            المصاريف
+                            <div class="arrow-icon me-1">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </a>
+                        <ul class="listis-item " id="dropdown-lang">
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">المصاريف</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">أقسام المصاريف</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                        المشتريات
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                        أضافة فاتورة
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="d-flex">
+                        المرضى المحولين
+                        <div class="badge-count me-1 mb-1">0</div>
+                    </a>
+                </li>
+                <li>
+                    <div class="dropdown-hover item">
+                        <a class="d-flex">
+                            المحاسبة
+                            <div class="arrow-icon me-1">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </a>
+                        <ul class="listis-item " id="dropdown-lang">
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">كشف حساب عام</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير الخزينة</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير العيادة و الدكتور</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير المريض</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير موظفي الاستقبال</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير شركات التأمين</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير المشتريات</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text">تقرير المصروفات</p>
+                                </a>
+                            </li>
+                            <li class="item-drop">
+                                <a href="">
+                                    <p class="text"> الرواتب</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="dropdown-hover" data-show="dropdown-lang">
+                <div class="icon-drop">
+                    <i class="fa-solid fa-user icon"></i>
+                </div>
+                <p class="text">الاستقبال</p>
+                <div class="arrow-icon">
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <ul class="listis-item" id="dropdown-lang">
+                    <li class="item-drop">
+                        <a href="#">
+                            <p class="text">
+                                <form class="w-100" action="" method="" id="logout-form">
+                                    <button class="border-0 bg-transparent p-0">
+                                        <p class="text">تسجيل الخروج</p>
+                                    </button>
+                                </form>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Top Nav Bar -->
+    <!-- Start Bottom Nav Bar -->
+    <nav class="bottom-nav not-print">
+        <div class="container">
+            <a href="#" class="tog-show" data-show=".bottom-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+            <div class="nav-holder d-flex align-items-center justify-content-between">
+                <ul class="list-item">
+                    <li>
+                        <a class="item" href="index.html">
+                            الرئيسية
+                            <i class="i-item fa-solid fa-house"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="addPatient.html">
+                            اضافة مريض
+                            <i class="i-item fa-solid fa-syringe"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            المرضى
+                            <i class="i-item fa-solid fa-users"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            المواعيد
+                            <i class="i-item fa-solid fa-calendar-days"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            بيانات المواعيد
+                            <i class="i-item fa-solid fa-calendar-days"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            الفواتير
+                            <i class="i-item fa-solid fa-file-invoice"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            التشخيصات
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            الأشعة
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                            <div class="badge-count">0</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item" href="">
+                            المختبر
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                            <div class="badge-count">0</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" href="">
+                            تسديد الزيارات
+                            <i class="i-item fa-solid fa-money-check-dollar"></i>
+                            <div class="badge-count">0</div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="notification d-flex">
+                    <ul class="list-item">
+                        <li>
+                            <a class="item" href="">
+                                الاشعارات
+                                <i class="i-item fa-solid fa-bell"></i>
+                                <div class="badge-count">0</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="lang me-2" href=""> <i class="fa-solid fa-language"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Bottom Nav Bar -->
+    <!-- Start Section -->
+    <section  class="main-section home">
+      <!--  -->
+        <div class="container">
+        <h4 class="main-heading">أضافة فاتورة</h4>
+        <div class="addNvoice-content bg-white p-4 shadow">
+          <div class="tip">
+            <p class="tip-text text-danger">هناك نسبة 15 %ضريبة علي الفاتورة غير السعودين</p>
+    
+            <div class="main-container d-flex flex-column flex-md-row align-items-center justify-content-center">
+              <div class="right-side w-75 ms-3  mb-md-0">
+                <div class="info-box d-flex flex-column flex-md-row mb-3">
+                  <div class="inp-container ms-0 ms-md-2  w-100">
+                    <label for="" class="small-label"> رقم ملف المريض او رقم الهوية</label>
+                    <input type="text" class="form-control w-100">
+                  </div>
+                  <div class="inp-container ms-0 ms-md-2 w-100">
+                    <label for="" class="small-label">المريض</label>
+                    <input type="text" value="" readonly="" id="" class="form-control w-100">
+                  </div>
+                                <div class="inp-container ms-0 ms-md-2 w-100">
+                    <label for="" class="small-label">الهاتف</label>
+                    <input type="tel" value="" readonly="" id="" class="form-control w-100">
+                  </div>
+                              </div>
+                <div class="info-box d-flex flex-column flex-md-row mb-3">
+                  <div class="inp-container ms-0 ms-md-2 w-100">
+                    <label for="" class="small-label">الحالة</label>
+                    <select  id="" class="main-select w-100">
+                      <option value="">الحالة</option>
+                      
+                      <option value="Paid">مسددة</option>
+                      <option value="Unpaid">غير مسددة</option>
+                      
+                      
+                    </select>
+                  </div>
+                  <div class="inp-container ms-0 ms-md-2 w-100">
+                    <label for="" class="small-label">العيادة</label>
+                    <select  id="" class="main-select w-100">
+                      <option value="">
+                        اختر العيادة
+                      </option>
+                                        <option value="1">أسنان</option>
+                                        <option value="2">مختبر</option>
+                                        <option value="3">أشعة</option>
+                                      </select>
+                  </div>
+                  <div class="inp-container ms-0 ms-md-2 w-100">
+                    <label for="" class="small-label">طبيب</label>
+                    <select id="" class="main-select w-100">
+                      <option value="">طبيب</option>
+                                      </select>
+                  </div>
+                  
+                </div>
+                <p>يمكنك أختيار الخدمات او البحث بالرقم</p>
+                <div class="info-box d-flex align-items-end justify-content-center gap-3 flex-column flex-md-row">
+                  <div class="inp-container ms-0 ms-md-2 w-100">
+                    <label for="" class="small-label">خدمة</label>
+                    <select  id="" class="main-select w-100">
+                      <option value="">خدمة</option>
+                                      </select>
+                  </div>
+    
+                  <div class="inp-container ms-0 ms-md-2 w-100">
+                    <label for="" class="small-label">خدمة</label>
+                    <input type="number" class="form-control" >
+                  </div>
+    
+                  <div class="inp-container w-100 ">
+                    <a target="_blank" href="" class="btn btn-sm btn-primary px-4">الخدمات</a>
+                  </div>
+                  <div class="inp-container d-flex align-items-center mb-2 w-100">
+                    <label for="split" class="small-label ms-2 form-check-label text-danger">تقسيم الفاتورة</label>
+                    <input type="checkbox" id="split" class="form-check-input mt-0">
+                </div>
+                <div class="inp-container d-flex flex-column w-100 d-none">
+                    <label for="split" class="small-label mb-2">عدد التقسيمات</label>
+                    <input type="number" id=""  class="w-100 form-control">
+                </div>
+                </div>
+    
+              </div>
+              <div class="left-side w-25 sw-100">
+                <div class="output-box d-flex align-items-center justify-content-end mb-2">
+                  <span class="a_word ms-2"> المبلغ: </span>
+                  <input readonly="" type="text" placeholder="0" class="text-center form-control w-50" >
+                </div>
+                <div class="output-box d-flex align-items-center justify-content-end mb-2">
+                  <span class="a_word ms-2"> خصم العروض :</span>
+                  <input readonly="" type="text" placeholder="0" class="text-center form-control w-50" >
+              </div>
+                <div class="output-box d-flex align-items-center justify-content-end mb-2">
+                  <span class="a_word ms-2 space-noWrap"> المبلغ بعد خصم العروض :</span>
+                  <input readonly="" type="text" placeholder="0" class="text-center form-control w-50" >
+              </div>
+                <div class="output-box d-flex align-items-center justify-content-end mb-2">
+                  <span class="a_word ms-2"> الضريبة: </span>
+                  <input readonly="" type="text" placeholder="0" class="text-center form-control w-50">
+                </div>
+                <div class="output-box d-flex align-items-center justify-content-end mb-2">
+                  <span class="a_word ms-2 space-noWrap"> الإجمالي مع الضريبة: </span>
+                  <input readonly="" type="text" placeholder="0" class="text-center form-control w-50" >
+                </div>
+                <div class="output-box d-flex align-items-center justify-content-end mb-2 d-none">
+                  <span class="a_word ms-2"> الاجمالي بعد التقسيم : </span>
+                  <input readonly="" type="text" placeholder="0" class="text-center form-control w-50" >
+              </div>
+                
+    
+    
+                <div class="output-box d-flex align-items-center justify-content-end mb-2">
+                  <span class="a_word ms-2"> نقدا</span>
+                  <input type="number" placeholder="0" class="text-center form-control w-50" >
+                </div>
+    
+                <div class="output-box d-flex align-items-center justify-content-end mb-2">
+                  <span class="a_word ms-2"> شبكة : </span>
+                  <input type="number" placeholder="0" class="text-center form-control w-50" >
+                </div>
+    
+                <div class="output-box d-flex align-items-center justify-content-end mb-2">
+                  <span class="a_word ms-2"> المتبقي : </span>
+                  <input type="text" placeholder="0" class="text-center form-control w-50">
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive ">
+              <table class="table main-table">
+                <thead>
+                  <tr>
+                    <th>القسم</th>
+                    <th>خدمة</th>
+                    <th>السعر</th>
+                    <th>الإجراءات</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+              </table>
+            </div>
+            <div class="Thetext-area w-100">
+              <textarea  id="" class="form-control w-100 p-2" placeholder="ملاحظات"></textarea>
+            </div>
+            <div class="submitBtn-holder text-center mt-3">
+              <button  class="btn btn-success px-5">
+                حفظ
+              </button>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section -->
+    <!-- Start Footer -->
+    <div class="footer-bottom py-3 not-print">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+                <p>جميع الحقوق محفوظة © لـ 2022</p>
+                <div class="about_data d-flex align-items-center justify-content-center">
+                    <p class="ms-2">برنامج سي - إدارة العيادات الطبية 0.0.1</p>
+                    <img class="alt_image" src="./img/footer/doc.png" alt="image">
+                </div>
+                <a href="https://www.const-tech.org/">
+                    <img src="./img/footer/copy.png" alt="logo">
+                </a>
+            </div>
+        </div>
+    </div>
+        <!-- ENd Footer -->
+        <!-- Js Files -->
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+    </body>
+</html>
