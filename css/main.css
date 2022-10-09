@@ -933,6 +933,13 @@ section.num-teeth .content input[type=checkbox]:nth-of-type(32) {
   display: flex;
 }
 
+.patientFile .medical-information .more-info::after {
+  content: none !important;
+}
+.patientFile .medical-information .data-content {
+  max-height: unset !important;
+}
+
 .addPatient-section .addPatient-content .section-title {
   background-color: #f0eff8;
 }

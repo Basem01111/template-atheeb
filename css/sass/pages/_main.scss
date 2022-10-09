@@ -1,0 +1,12 @@
+.patientFile {
+  .medical-information  {
+    .more-info {
+      &::after {
+        content: none !important;
+    }
+    }
+    .data-content {
+      max-height: unset !important;
+  }
+  }
+}   
